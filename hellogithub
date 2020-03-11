@@ -1,0 +1,38 @@
+package edu.neusoft.demo.month;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author 
+ *
+ */
+public class DayCCount {
+	public static void main(String[] args) {
+		int month,day;
+		Scanner sc = new Scanner(System.in);
+		month= sc.nextInt();
+		
+		
+		//
+		int year = 0;
+		year = sc.nextInt();
+		
+		if(year>999&&year<9999){
+		if(year%4 == 0  && year%100 != 0){
+			System.out.println(year+"是闰年");
+		}else if( year% 400 ==0){
+			System.out.println(year+"是平年");
+		}
+		}else{
+			System.out.println("重新输入");
+		}
+		
+		switch(month){
+			case 1: 
+				
+		}
+		
+	}
+
+}
